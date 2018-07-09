@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="LineGap" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jsk-fS-UkY">
+                                <rect key="frame" x="88" y="80" width="200" height="40"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="6mA-UI-Hea"/>
+                                    <constraint firstAttribute="height" constant="40" id="Llu-vS-pCb"/>
+                                </constraints>
+                                <state key="normal" title="开始"/>
+                                <connections>
+                                    <action selector="startRecord:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PMX-jF-pux"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Xk-H3-dXL">
+                                <rect key="frame" x="88" y="140" width="200" height="40"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="播放"/>
+                                <connections>
+                                    <action selector="startPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="O7l-Vg-Ux9"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kRs-Wt-ws0">
+                                <rect key="frame" x="20" y="200" width="335" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="83I-7B-tav"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lcM-NI-cqu">
+                                <rect key="frame" x="20" y="260" width="335" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Jsk-fS-UkY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="60" id="4Fq-Nu-TBM"/>
+                            <constraint firstItem="4Xk-H3-dXL" firstAttribute="centerX" secondItem="Jsk-fS-UkY" secondAttribute="centerX" id="Ljc-vY-o3F"/>
+                            <constraint firstItem="lcM-NI-cqu" firstAttribute="top" secondItem="kRs-Wt-ws0" secondAttribute="bottom" constant="20" id="Q8q-8g-Weu"/>
+                            <constraint firstItem="4Xk-H3-dXL" firstAttribute="top" secondItem="Jsk-fS-UkY" secondAttribute="bottom" constant="20" id="Rs6-8W-DnV"/>
+                            <constraint firstItem="Jsk-fS-UkY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="akB-ep-mH3"/>
+                            <constraint firstItem="4Xk-H3-dXL" firstAttribute="width" secondItem="Jsk-fS-UkY" secondAttribute="width" id="bpV-Mn-O3m"/>
+                            <constraint firstItem="lcM-NI-cqu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="dE4-lx-A4E"/>
+                            <constraint firstItem="kRs-Wt-ws0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="jSh-dX-Xut"/>
+                            <constraint firstItem="kRs-Wt-ws0" firstAttribute="top" secondItem="4Xk-H3-dXL" secondAttribute="bottom" constant="20" id="l3y-5F-JFf"/>
+                            <constraint firstItem="4Xk-H3-dXL" firstAttribute="height" secondItem="Jsk-fS-UkY" secondAttribute="height" id="lHe-6b-7rD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kRs-Wt-ws0" secondAttribute="trailing" constant="20" id="pwL-U5-6ue"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lcM-NI-cqu" secondAttribute="trailing" constant="20" id="wjp-1p-bRc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="startPlayBtn" destination="4Xk-H3-dXL" id="b6M-Mb-eeW"/>
+                        <outlet property="startRecordBtn" destination="Jsk-fS-UkY" id="sGz-nL-fPP"/>
+                        <outlet property="tipLabel" destination="lcM-NI-cqu" id="t2M-ak-Vnw"/>
+                        <outlet property="volumLabel" destination="kRs-Wt-ws0" id="xg8-iX-cd3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="132.68365817091455"/>
+        </scene>
+    </scenes>
+</document>
